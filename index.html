@@ -1,89 +1,82 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <title>ClivingScore</title> 
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="http://app.unbounce.com/favicon.ico" />
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/style.css"> 
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Cliff Diving</title>
-    <link rel="icon" type="image/x-icon" href="http://app.unbounce.com/favicon.ico" />
-</head>
-
-<body>
-
-    <div id="wrapper">
+    <body>
         <header>
-            <img src="https://seedroid.com/img/post/icons/128/com.mobile.cliffdiver.jpg" />
-            <h1>Cliff Diving</h1>
+            <div class="contenedor">
+                <h1>ClivingScore</h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#home">Página principal</a></li>
+                        <li><a href="#point">Puntuar</a></li>
+                        <li><a href="#about">Ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        <main>
+            <section id="banner">
+                <img src="https://image.redbull.com/rbcom/010/2015-07-15/P-20150929-00676/0010/1/1500/1000/1/rachelle-simpson-dives-in-the-azores.jpg" alt="Imagen del banner">
+                <div class="contenedor">
+                    <h2>CLIFF DIVING</h2>
+                    <p> Rellena el formulario para puntuar a los participantes.
+                </div>
+            </section>
 
-        <ul>
-            <li><a href="#home">Página principal</a></li>
-            <li><a href="#point">Puntuación</a></li>
-            <li><a href="#about">Ayuda</a></li>
-        </ul>
+            <section id="formulario">
+                <form>
+                    <label for="cat">Categoría :</label>
+                    <select id="cat" name="cat">
+                        <option value="Individual">Individual</option>
+                        <option value="Parejas">Parejas</option>
+                    </select>
+                    <label>Participante 1:</label>
+                    <input type="text" id="name1" name="name1" placeholder=" Nombre" required />
+                    <input type="text" id="surname1" name="surname1" placeholder=" Apellidos" required />
+                    <label>Participante 2:</label>
+                    <input type="text" id="name2" name="name2" placeholder=" Nombre" required />
+                    <input type="text" id="surname1" name="surname1" placeholder=" Apellidos" required />
+                    <input type="date" id="date" name="date" required />
+                    <label for="program">Programa :</label>
+                    <select id="program" name="program">
+                        <option value="Largo">Largo</option>
+                        <option value="Corto">Corto</option>
+                    </select>
+                    <div>
+                        <h3>Puntuaciones</h3>
+                        <label>Dificultad técnica</label>
+                        <input type="number" step = "0.01" id="difficult" name="difficult" placeholder=" 0-7 puntos" required/>
+                        <label>Ejecución</label>
+                        <input type="number" step = "0.01" id="exec" name="exec" placeholder=" 0-7 puntos" required />
+                        <label>Estética</label>
+                        <input type="number" step = "0.01" name="est" placeholder=" 0-7 puntos" required/>  
+                    </div>
+                    <button type="reset">
+                        Reset
+                    </button>
+                    <button type="submit">
+                        Guardar
+                    </button>    
+                </form>
+            </section>
+        </main>
 
-        <aside>
-            <h2>Datos participantes</h2>
-            <form>
-
-                <label for="cat">Categoría</label>
-                <select id="cat" name="cat">
-                    <option value="Individual">Individual</option>
-                    <option value="Parejas">Parejas</option>
-                </select><br/><br/>
-
-                <label>Participante 1:</label><br/><br/>
-
-                <label for="name1">Nombre</label>
-                <input type="text" id="name1" name="name1" required />
-
-                <label for="surname1">Apellidos</label>
-                <input type="text" id="surname1" name="surname1" required /><br/><br/>
-
-                <label>Participante 2:</label><br/><br/>
-
-                <label for="name2">Nombre</label>
-                <input type="text" id="name2" name="name2" required />
-
-                <label for="surname2">Apellidos</label>
-                <input type="text" id="surname2" name="surname2" required /><br/><br/>
-
-                <label for="date">Fecha</label>
-                <input type="date" id="date" name="date" required /><br/><br/>
-
-                <label for="program">Programa</label>
-                <select id="program" name="program">
-                    <option value="Largo">Largo</option>
-                    <option value="Corto">Corto</option>
-                </select><br/>
-
-                <h2>Puntuaciones</h2>
-
-                <label>Dificultad técnica</label>
-                <input type="number" step = "0.01" id="difficult" name="difficult" placeholder="(0-7 puntos)" required/>
-
-                <label>Ejecución</label>
-                <input type="number" step = "0.01" id="exec" name="exec" placeholder="(0-7 puntos)" required />
-
-
-                <label>Estética</label>
-                <input type="number" step = "0.01" name="est" placeholder="(0-7 puntos)" required/> <br/> <br/>
-                 
-                <button type="reset">
-                    Reset
-                </button>
-                <button type="submit">
-                    Guardar
-                </button>
-            </form>
-        </aside>
         <footer>
-            <h3>IPM, Curso 18/19 </h3>
-            <h4>Francisco Javier Manuel García</h4>
-            <h4>Jorge Becerra Ríos</h4>
+        	<div class="contenedor">
+        		<p class="copy"> ClivingScore &copy; 2018</p>
+        		<p> Francisco Javier Manuel García</p>
+        		<p> Jorge Becerra Ríos</p>
+        	</div>	
         </footer>
-
-    </div>
-
-</body>
-
+    </body>
 </html>
