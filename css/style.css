@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url(menu.css);
+@import url(banner.css);
+@import url(formulario.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: #173d69;
+	color: #fff;
+}
+
+header{
+	
+	width: 100%;
+	height: 50px;
+	color: #fcfcfc;
+	background: #1f3f73;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.contenedor{
+	width: 98%;
+	margin: auto;
+
+}
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+	float: left;
+	margin-top: 5px;
+	font-size: 30px;
+	
+}
+
+header .contenedor {
+	display: table;
+}
+
+section{
+	width: 100%;
+}
+
+footer .contenedorFooter{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.copy {
+	font-size: 1.5rem;
+	width: 100%;
+
+}
+
+footer p{
+	background-color: #021b35;
+	font-size: 1.3rem;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+	padding: 5px;
+}
+
+aside{
+		font-size: 10rem;
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	aside h3{
+		font-size: 10vw;
+	}
+
+@media (min-width: 1024px){
+	.contenedor{
+		width: 1000px;
+	}
+
+	footer{
+		clear: both;
+	}
+
+	aside{
+		font-size: 10rem;
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	aside h3{
+		font-size: 5vw;
+	}
+
+}
+
