@@ -21,7 +21,6 @@ form select {
 	left: 50%;
 	background: #3d7cc4;
 	color: #fff;
-	position: 10px;
 	line-height: 50px;
 	border-radius: 2px;
 	border: none;
@@ -64,7 +63,7 @@ form h3{
 
 form #error{
 	margin-top: 2%;
-	margin-bottom: : 2%;
+	margin-bottom: 2%;
 	font-size: 2rem;
 }
 
