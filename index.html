@@ -76,11 +76,12 @@
                         <h3>Puntuaciones</h3><br/>
                         <p>AVISO: Introduzca su nota (0-7). Los números decimales se representan con comas.</p>
                         <label>Dificultad técnica*</label><br/>
-                        <input type="number" step = "0.01" id="difficult" name="difficult" min="0" max="7.99" placeholder="Ex. 6,35" required /><br/>
+                        <input type="number" step = "0.01" id="difficult" name="difficult" min="0" max="7" placeholder="Ex. 6,35" required /><br/>
                         <label>Ejecución*</label><br/>
-                        <input type="number" step = "0.01" id="exec" name="exec" placeholder="Ex. 6,35" required min="0" max="7.99"/><br/>
+                        <input type="number" step = "0.01" id="exec" name="exec" placeholder="Ex. 6,35" required min="0" max="7"/><br/>
                         <label>Estética*</label><br/>
-                        <input type="number" step = "0.01" id="est" name="est" placeholder="Ex. 6,35" required min="0" max="7.99"/>  <br/>
+                        <input type="number" step = "0.01" id="est" name="est" placeholder="Ex. 6,35" required min="0" max="7"/>  <br/>
+                        <p id="error"></p>
                         <button type="reset">
                             Reset
                         </button>
