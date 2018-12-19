@@ -36,7 +36,7 @@ form label{
 }
 
 form p{
-	font-size: 20px;
+	font-size: 1.2rem;
 	margin-bottom: 5px;
 }
 
@@ -59,13 +59,13 @@ form input {
 }
 
 form h3{
-	font-size: 40px;
+	font-size: 12vw;
 }
 
 form #error{
 	margin-top: 2%;
 	margin-bottom: : 2%;
-	font-size: 40px;
+	font-size: 2rem;
 }
 
 form button{
