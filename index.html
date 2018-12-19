@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>ClivingScore</title> 
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="http://app.unbounce.com/favicon.ico" />
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/style.css"> 
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <div class="contenedor">
+                <h1>ClivingScore</h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#home">Página principal
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a></li>
+                        <li><a href="#point">Puntuar
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a></li>
+                        <li><a href="#about">Ayuda
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="banner">
+                <img src="https://image.redbull.com/rbcom/010/2015-07-15/P-20150929-00676/0010/1/1500/1000/1/rachelle-simpson-dives-in-the-azores.jpg" alt="Imagen del banner">
+                <div class="contenedor">
+                    <h2>CLIFF DIVING</h2>
+                    <p> Rellena el formulario para puntuar a los participantes.
+                </div>
+            </section>
+
+            <section id="formulario">
+                <form>
+                    <div class="contenedor">
+                        <label for="cat">Categoría*</label><br/>
+                        <select id="cat" name="cat" >
+                            <option value="Individual">Individual</option>
+                            <option value="Parejas" selected>Parejas</option>
+                        </select><br/>
+                        <div id = "p1">
+                            <label>Participante 1*</label><br/>
+                            <input type="text" id="name1" name="name1" placeholder=" Nombre" required pattern="[ A-Za-z ñ Ñ]+"/>
+                            <input type="text" id="surname1" name="surname1" placeholder=" Apellidos" required pattern="[ A-Za-z ñ Ñ]+"/><br/>
+                        </div>
+                        <div id = "p2">
+                            <label>Participante 2*</label><br/>
+                            <input type="text" id="name2" name="name2" placeholder=" Nombre" required pattern="[ A-Za-z ñ Ñ]+"/>
+                            <input type="text" id="surname2" name="surname2" placeholder=" Apellidos" required pattern="[ A-Za-z ñ Ñ]+"/><br/>
+                        </div>
+                        <label>Fecha*</label><br/>
+                        <input type="date" id="date" name="date" required /><br/>
+                        <label for="program">Programa*</label><br/>
+                        <select id="program" name="program">
+                            <option value="Largo">Largo</option>
+                            <option value="Corto">Corto</option>
+                        </select><br/>
+                        <h3>Puntuaciones</h3><br/>
+                        <p>AVISO: Introduzca su nota (0-7). Los números decimales se representan con comas.</p>
+                        <label>Dificultad técnica*</label><br/>
+                        <input type="number" step = "0.01" id="difficult" name="difficult" min="0" max="7" placeholder="Ex. 6,35" required /><br/>
+                        <label>Ejecución*</label><br/>
+                        <input type="number" step = "0.01" id="exec" name="exec" placeholder="Ex. 6,35" required min="0" max="7"/><br/>
+                        <label>Estética*</label><br/>
+                        <input type="number" step = "0.01" id="est" name="est" placeholder="Ex. 6,35" required min="0" max="7"/>  <br/>
+                        <p id="error"></p>
+                        <button type="reset">
+                            Reset
+                        </button>
+                        <button id="save" type="submit">
+                            Guardar
+                        </button>
+                        <button id="totalPoints">
+                            Puntos
+                        </button>
+                    </div>    
+                </form>
+            </section>
+            <aside>
+                <h3>Puntuación total: </h3>
+                <p id="point">0</p>
+            </aside>
+        </main>
+        <footer>
+            <div class="contenedorFooter">
+                <p class="copy"> ClivingScore &copy; 2018</p>
+                <p> Francisco Javier Manuel García</p>
+                <p> Jorge Becerra Ríos</p>
+            </div>  
+        </footer>
+    </body>
+</html>
