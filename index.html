@@ -57,16 +57,25 @@
                             <option value="Parejas" selected>Parejas</option>
                         </select><br/>
                         <div id = "p1">
-                            <label>Participante 1*</label><br/>
+                            <h2>Participante 1</h2><br/>
+                            <label for="name1">Nombre*</label><br>
+                            <p id="errorName1"></p>
                             <input type="text" id="name1" name="name1" placeholder=" Nombre" required pattern="[ A-Za-z ñ Ñ]+"/>
+                            <label for="surname1">Apellidos*</label><br>
+                             <p id="errorSurname1"></p>
                             <input type="text" id="surname1" name="surname1" placeholder=" Apellidos" required pattern="[ A-Za-z ñ Ñ]+"/><br/>
                         </div>
                         <div id = "p2">
-                            <label>Participante 2*</label><br/>
+                            <h2>Participante 2</h2><br/>
+                            <label for="name2">Nombre*</label><br>
+                             <p id="errorName2"></p>
                             <input type="text" id="name2" name="name2" placeholder=" Nombre" required pattern="[ A-Za-z ñ Ñ]+"/>
+                            <label for="surname2">Apellidos*</label><br>
+                             <p id="errorSurname2"></p>
                             <input type="text" id="surname2" name="surname2" placeholder=" Apellidos" required pattern="[ A-Za-z ñ Ñ]+"/><br/>
                         </div>
                         <label>Fecha*</label><br/>
+                         <p id="errorDate"></p>
                         <input type="date" id="date" name="date" required /><br/>
                         <label for="program">Programa*</label><br/>
                         <select id="program" name="program">
@@ -106,5 +115,6 @@
                 <p> Jorge Becerra Ríos</p>
             </div>  
         </footer>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>
