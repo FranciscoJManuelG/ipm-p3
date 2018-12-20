@@ -34,6 +34,11 @@ form label{
 	font-size: 20px;
 }
 
+form h2{
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
 form p{
 	font-size: 1.2rem;
 	margin-bottom: 5px;
@@ -109,6 +114,17 @@ form button:hover:after{
 	form{
 		margin-top: 20px;
 		width: 100%;
+	}
+
+	form #difficult{
+		margin-top: 10px;
+		width: 150px;
+	}
+	form #exec{
+		width: 150px;
+	}
+	form #est{
+		width: 150px;
 	}
 }
 
