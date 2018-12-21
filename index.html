@@ -15,7 +15,7 @@
                 <h1>ClivingScore</h1>
                 <input type="checkbox" id="menu-bar">
                 <label class="icon-menu" for="menu-bar"></label>
-                <nav class="menu">
+                <nav id="menu" class="menu" aria-expanded="false">
                     <ul>
                         <li><a href="#home">Página principal
                             <span></span>
@@ -41,7 +41,7 @@
         </header>
         <main>
             <section id="banner">
-                <img src="https://image.redbull.com/rbcom/010/2015-07-15/P-20150929-00676/0010/1/1500/1000/1/rachelle-simpson-dives-in-the-azores.jpg" alt="Imagen del banner">
+                <img src="https://image.redbull.com/rbcom/010/2015-07-15/P-20150929-00676/0010/1/1500/1000/1/rachelle-simpson-dives-in-the-azores.jpg" alt="Imagen del banner de una competición de salto de acantilado">
                 <div class="contenedor">
                     <h2>CLIFF DIVING</h2>
                     <p> Rellena el formulario para puntuar a los participantes.
@@ -52,52 +52,52 @@
                 <form>
                     <div class="contenedor">
                         <label for="cat">Categoría*</label><br/>
-                        <select id="cat" name="cat" >
-                            <option value="Individual">Individual</option>
-                            <option value="Parejas" selected>Parejas</option>
+                        <select id="cat" name="cat" aria-label="Categoría">
+                            <option value="Individual" aria-label="Individual">Individual</option>
+                            <option value="Parejas" aria-label="Parejas" selected>Parejas</option>
                         </select><br/>
                         <div id = "p1">
                             <h2>Participante 1</h2><br/>
                             <label for="name1">Nombre*</label><br>
                             <p id="errorName1"></p>
-                            <input type="text" id="name1" name="name1" placeholder=" Nombre" required pattern="[ A-Za-z ñ Ñ]+"/>
+                            <input type="text" id="name1" name="name1" placeholder=" Nombre" required aria-required="true" aria-label="Nombre participante 1" aria-live="assertive" pattern="[ A-Za-z ñ Ñ]+"/>
                             <label for="surname1">Apellidos*</label><br>
                              <p id="errorSurname1"></p>
-                            <input type="text" id="surname1" name="surname1" placeholder=" Apellidos" required pattern="[ A-Za-z ñ Ñ]+"/><br/>
+                            <input type="text" id="surname1" name="surname1" placeholder=" Apellidos" required aria-required="true" aria-label="Apellidos participante 1" aria-live="assertive" pattern="[ A-Za-z ñ Ñ]+"/><br/>
                         </div>
                         <div id = "p2">
                             <h2>Participante 2</h2><br/>
                             <label for="name2">Nombre*</label><br>
                              <p id="errorName2"></p>
-                            <input type="text" id="name2" name="name2" placeholder=" Nombre" required pattern="[ A-Za-z ñ Ñ]+"/>
+                            <input type="text" id="name2" name="name2" placeholder=" Nombre" required aria-required="true" aria-label="Nombre participante 2" aria-live="assertive" pattern="[ A-Za-z ñ Ñ]+"/>
                             <label for="surname2">Apellidos*</label><br>
                              <p id="errorSurname2"></p>
-                            <input type="text" id="surname2" name="surname2" placeholder=" Apellidos" required pattern="[ A-Za-z ñ Ñ]+"/><br/>
+                            <input type="text" id="surname2" name="surname2" placeholder=" Apellidos" required aria-required="true" aria-label="Apellidos participante 2" aria-live="assertive" pattern="[ A-Za-z ñ Ñ]+"/><br/>
                         </div>
-                        <label>Fecha*</label><br/>
+                        <label for="date">Fecha*</label><br/>
                          <p id="errorDate"></p>
-                        <input type="date" id="date" name="date" required /><br/>
+                        <input type="date" id="date" name="date" required aria-required="true" aria-label="Fecha" aria-live="assertive" /><br/>
                         <label for="program">Programa*</label><br/>
                         <select id="program" name="program">
-                            <option value="Largo">Largo</option>
-                            <option value="Corto">Corto</option>
+                            <option value="Largo" aria-label="Largo">Largo</option>
+                            <option value="Corto" aria-label="Corto">Corto</option>
                         </select><br/>
                         <h3>Puntuaciones</h3><br/>
                         <p>AVISO: Introduzca su nota (0-7). Los números decimales se representan con comas.</p>
                         <label>Dificultad técnica*</label>
-                        <input type="number" step = "0.01" id="difficult" name="difficult" min="0" max="7" placeholder="Ex. 6,35" required />
+                        <input type="number" step = "0.01" id="difficult" name="difficult" min="0" max="7" placeholder="Ex. 6,35" required aria-required="true" aria-label="Dificultad técnica" aria-live="assertive"/>
                         <label>Ejecución*</label>
-                        <input type="number" step = "0.01" id="exec" name="exec" placeholder="Ex. 6,35" required min="0" max="7"/>
+                        <input type="number" step = "0.01" id="exec" name="exec" placeholder="Ex. 6,35" required aria-required="true" min="0" max="7" aria-label="Ejecución" aria-live="assertive"/>
                         <label>Estética*</label>
-                        <input type="number" step = "0.01" id="est" name="est" placeholder="Ex. 6,35" required min="0" max="7"/> 
+                        <input type="number" step = "0.01" id="est" name="est" placeholder="Ex. 6,35" required aria-required="true" min="0" max="7" aria-label="Estética" aria-live="assertive"/> 
                         <p id="error"></p>
-                        <button type="reset">
+                        <button type="reset" aria-label="Reset">
                             Reset
                         </button>
-                        <button id="save" type="submit">
+                        <button id="save" type="submit" aria-label="Guardar" aria-live="assertive">
                             Guardar
                         </button>
-                        <button id="totalPoints">
+                        <button id="totalPoints" aria-label="Puntos" aria-live="assertive">
                             Puntos
                         </button>
                     </div>    
