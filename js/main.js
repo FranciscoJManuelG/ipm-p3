@@ -83,37 +83,45 @@ function createEventListeners() {
 	surname1 = document.getElementById("surname1");
 	surname2 = document.getElementById("surname2");
 	date = document.getElementById("date");
-	pointDifficult = document.getElementById("difficult");
-	pointExecution = document.getElementById("exec");
-	pointEsthetic = document.getElementById("est");
 
 	name1.onblur = function() {
       if (this.value == '') {
         document.getElementById("errorName1").innerText='El nombre del participante 1 es un campo obligatorio';
+      } else{
+      	document.getElementById("errorName1").innerText='';
       }
     }
 
     surname1.onblur = function() {
       if (this.value == '') {
         document.getElementById("errorSurname1").innerText='Los apellidos del participante 1 es un campo obligatorio';
+      }else{
+      	document.getElementById("errorSurname1").innerText='';
       }
     }
 
     name2.onblur = function() {
       if (this.value == '') {
         document.getElementById("errorName2").innerText='El nombre del participante 2 es un campo obligatorio';
+      } else{
+      	document.getElementById("errorName2").innerText='';
       }
     }
 
     surname2.onblur = function() {
       if (this.value == '') {
         document.getElementById("errorSurname2").innerText='Los apellidos del participante 2 es un campo obligatorio';
+      }else{
+      	document.getElementById("errorSurname2").innerText='';
       }
     }
 
     date.onblur = function() {
       if (this.value == '') {
         document.getElementById("errorDate").innerText='La fecha es un campo obligatorio';
+      }
+      else{
+      	document.getElementById("errorDate").innerText='';
       }
     }   
 }
