@@ -87,15 +87,6 @@ function createEventListeners() {
 	pointExecution = document.getElementById("exec");
 	pointEsthetic = document.getElementById("est");
 
-	menu.onclick = function(){
-		var change = document.getElementById("menu").getAttribute("aria-expanded")
-		if (change === "false"){
-        	document.getElementById("menu").setAttribute("aria-expanded", "true");
-		}else{
-			document.getElementById("menu").setAttribute("aria-expanded", "false");
-		}
-	}
-
 	name1.onblur = function() {
       if (this.value == '') {
         document.getElementById("errorName1").innerText='El nombre del participante 1 es un campo obligatorio';
